@@ -47,7 +47,7 @@ $("#mau").on("click", function (event) {
 
     if (isLove == true) {
       $("#mau").on("click", function () {
-        document.location.href = "../success.html";
+        document.location.href = "../index.html";
       });
     }
   }

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Fredoka", sans-serif;
+  color: #262828;
+}
+
+.container {
+  height: 100vh;
+  height: 100svb;
+}
+
+.container > .header {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > .header h1 {
+  font-size: 3rem;
+}
+
+.container .mainContent {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .image {
+  width: 20vw;
+}
+
+.message {
+  display: flex;
+  height: 30vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 1rem;
+  }
+
+  .container > .header {
+    text-align: center;
+  }
+
+  .container .image {
+    width: 45vw;
+  }
+
+  .container > .header h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -30,7 +30,7 @@ $("#nggakMau").on("click", function () {
     $(this).text("hiks hiks hiks");
     if (niceTry == true) {
       $(this).on("click", function () {
-        document.location.href = "../pages/success.html";
+        window.location.href = "../pages/success.html";
       });
     }
   }

@@ -30,7 +30,7 @@ $("#nggakMau").on("click", function () {
     $(this).text("hiks hiks hiks");
     if (niceTry == true) {
       $(this).on("click", function () {
-        window.location.href = "../pages/success.html";
+        window.location.href = "https://www.youtube.com/watch?v=iz7hDDlW8yQ&t=64s";
       });
     }
   }
@@ -41,11 +41,10 @@ $("#mau").on("click", function (event) {
   counter++;
   console.log(counter);
   if (counter > 0) {
-    event.preventDefault();
-    $("#mau").text("Serius?");
+    $("#mau").html('<a class="url" href="../pages/success.html">Serius</a>');
     isLove = true;
 
-    if (isLove == true) {
+    if (isLove == true && counter > 2) {
       $("#mau").on("click", function () {});
     }
   }

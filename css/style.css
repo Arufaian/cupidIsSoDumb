@@ -55,6 +55,10 @@ h1 {
   background-color: #f875aa;
 }
 
+.url {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
   .main_content > img {
     width: 70vw;

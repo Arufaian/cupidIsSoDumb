@@ -47,7 +47,7 @@ $("#mau").on("click", function (event) {
 
     if (isLove == true) {
       $("#mau").on("click", function () {
-        document.location.href = "https://open.spotify.com/playlist/37i9dQZF1E365L9B27QluC";
+        document.location.href = "../success.html";
       });
     }
   }

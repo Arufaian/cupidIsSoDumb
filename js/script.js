@@ -36,19 +36,15 @@ $("#nggakMau").on("click", function () {
   }
 });
 
-$("#mau").on("click", function (event) {
-  playAudio($(this).attr("id"));
-  counter++;
-  console.log(counter);
-  if (counter > 0) {
-    $("#mau").html('<a class="url" href="../pages/success.html">Serius</a>');
-    isLove = true;
-
-    if (isLove == true && counter > 2) {
-      $("#mau").on("click", function () {});
-    }
-  }
-});
+// $("#mau").on("click", function () {
+//   playAudio($(this).attr("id"));
+//   counter++;
+//   console.log(counter);
+//   if (counter > 0) {
+//     $("#mau").html('<a class="url" href="../pages/success.html">Serius</a>');
+//     isLove = true;
+//   }
+// });
 
 function playAudio(name) {
   let audio = new Audio("resource/" + name + ".mp3");

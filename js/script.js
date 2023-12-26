@@ -30,25 +30,23 @@ $("#nggakMau").on("click", function () {
     $(this).text("hiks hiks hiks");
     if (niceTry == true) {
       $(this).on("click", function () {
-        document.location.href = "https://www.youtube.com/watch?v=iz7hDDlW8yQ&t=64s";
+        document.location.href = "../pages/success.html";
       });
     }
   }
 });
 
 $("#mau").on("click", function (event) {
-  event.preventDefault();
   playAudio($(this).attr("id"));
   counter++;
   console.log(counter);
   if (counter > 0) {
+    event.preventDefault();
     $("#mau").text("Serius?");
     isLove = true;
 
     if (isLove == true) {
-      $("#mau").on("click", function () {
-        document.location.href = "../pages/success.html";
-      });
+      $("#mau").on("click", function () {});
     }
   }
 });
